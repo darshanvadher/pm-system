@@ -40,4 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-/app/generated/prisma
+# The generated Prisma client is committed so it's available at build time on
+# Hostinger Web Apps (which only runs `npm run build`, not `prisma generate`).
+# If you move to a host/CI that runs prisma generate before build, add it back.
+# /app/generated/prisma
